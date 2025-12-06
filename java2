@@ -1,0 +1,33 @@
+class Producto
+{
+// Atributo privado: solo se puede leer, no modificar desde afuera
+private String codigoBarras;
+
+// Atributo privado: se puede leer y cambiar con métodos
+private double precio;       
+
+// Constructor: aquí se asignan el código de barras y el precio
+// El código de barras solo se puede poner una vez (al crear el objeto)
+public Producto(String codigoBarras, double precio) 
+{
+    this.codigoBarras = codigoBarras;
+    this.precio = precio;
+}
+
+// Método para LEER el código de barras
+public String getCodigoBarras() 
+{
+    return this.codigoBarras;
+}
+
+// Método para LEER el precio
+public double getPrecio() 
+{
+    return this.precio;
+}
+
+// Método para CAMBIAR el precio
+public void setPrecio(double nuevoPrecio) 
+{
+    this.precio = nuevoPrecio;
+}
