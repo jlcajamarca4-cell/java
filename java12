@@ -1,0 +1,32 @@
+class Animal
+{
+Animal()
+{
+// Este mensaje se muestra cuando se crea un Animal
+System.out.println("Animal is create");
+}
+}
+
+clase Perro extiende Animal
+{
+Perro()
+{
+super();
+// Llama primero al constructor de Animal
+
+// Este mensaje se muestra cuando se crea un Dog
+System.out.println("Dog is created");
+}
+}
+
+public class Main
+{
+public static void main(String[] args)
+{
+// Se crea un objeto de tipo Dog
+Dog myDog = new Dog();
+
+// Al crearlo, se ejecuta primero el mensaje de Animal
+// y después el mensaje de Dog
+}
+}
