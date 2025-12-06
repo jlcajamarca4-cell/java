@@ -1,0 +1,16 @@
+public class Main
+{
+// esta variable pertenece a cada objeto que se cree de esta clase
+int x = 5;
+
+public static void main(String[] args) 
+{
+    // aqui se crean dos objetos diferentes de la misma clase
+    Main myObj1 = new Main();
+    Main myObj2 = new Main();
+
+    // aunque son objetos distintos, ambos tienen su propia variable x con valor 5
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+}
+}
