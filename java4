@@ -1,0 +1,32 @@
+public class Person
+{
+// esta variable es privada, solo se puede usar dentro de esta clase
+private String name;
+
+public static void main(String[] args) 
+{
+    // aqui solo se muestra un mensaje en pantalla
+    System.out.println("hello world");
+
+    // se crea un objeto de la clase person
+    Person p1 = new Person();
+
+    // se le asigna un nombre usando el setter
+    p1.setName("katherine");
+
+    // se obtiene y se muestra el nombre usando el getter
+    System.out.println(p1.getName());
+}
+
+// getter: sirve para obtener el valor del nombre
+public String getName() 
+{
+    return name;
+}
+
+// setter: sirve para cambiar el valor del nombre
+public void setName(String newName) 
+{
+    this.name=newName;
+}
+}
