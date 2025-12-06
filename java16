@@ -1,0 +1,35 @@
+// Clase base (superclase)
+public class Personal
+{
+// Atributo para guardar el nombre del empleado
+String nombre;
+
+// Atributo para guardar el ID del empleado
+String idEmpleado;
+}
+
+// Clase hija (subclase) que hereda de Personal
+public class Profesor extends Personal
+{
+// Atributo propio del profesor
+String especialidad;
+
+// Método principal
+public static void main(String[] args) 
+{
+    // Se crea un objeto de tipo Profesor
+    Profesor prof = new Profesor();
+
+    // Asignación de datos heredados de la clase Personal
+    prof.nombre = "Jeon Jungkook";
+    prof.idEmpleado = "4678IZP";
+
+    // Asignación de dato propio de la clase Profesor
+    prof.especialidad = "Arte";
+
+    // Impresión de la información en pantalla
+    System.out.println("Nombre: " + prof.nombre);
+    System.out.println("ID Empleado: " + prof.idEmpleado);
+    System.out.println("Especialidad: " + prof.especialidad);
+}
+}
