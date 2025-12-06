@@ -1,0 +1,18 @@
+public class Main
+{
+// este método solo sirve para mostrar un mensaje en pantalla
+static void hi()
+{
+// cambia un poco el texto, pero hace exactamente lo mismo
+System.out.println("mi nombre es Katherine Ramirez");
+}
+
+public static void main(String[] args) 
+{
+    // aqui simplemente se llama al metodo hello
+    hello();
+
+    // si quisieras, podrias llamarlo mas veces y se repetiria el mensaje
+    // hi();
+}
+}
