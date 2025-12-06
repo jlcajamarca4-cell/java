@@ -1,0 +1,14 @@
+public class Main
+{
+// esta variable guarda un número, en este caso 5
+int x = 5;
+
+public static void main(String[] args) 
+{
+    // aqui se crea un objeto de la clase main llamado myObj
+    Main myObj = new Main();
+
+    // se muestra en pantalla el valor de x usando el objeto
+    System.out.println(myObj.x);
+}
+}
