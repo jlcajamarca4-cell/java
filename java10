@@ -1,0 +1,22 @@
+public class Main
+{
+// esta variable guardara el valor que se envie al crear el objeto
+int numero;
+
+// este es el constructor, recibe un numero como parametro
+public Main(int valor) 
+{ 
+    // aqui se le asigna el valor recibido a la variable numero
+    this.numero = valor; 
+} 
+
+// aqui empieza el programa
+public static void main(String[] args)  
+{ 
+    // se crea un objeto y se le envía el numero 10 al constructor
+    Main myObj = new Main(10); 
+
+    // se muestra en pantalla el valor que quedo guardado
+    System.out.println("el valor de numero es = " + myObj.numero);
+} 
+}
