@@ -1,0 +1,23 @@
+// crear la clase main
+public class Main
+{
+// este es un atributo de la clase
+int x;
+
+// este es el constructor de la clase main
+public Main() 
+{
+    // aqui se le asigna un valor inicial a x
+    x = 10;
+}
+
+public static void main(String[] args) 
+{
+    // aqui se crea un objeto de la clase main
+    // al crearlo se ejecuta automaticamente el constructor
+    Main myObj = new Main(); 
+
+    // se muestra en pantalla el valor de x que tiene el objeto
+    System.out.println(myObj.x); 
+}
+}
