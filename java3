@@ -1,0 +1,57 @@
+public class Main
+{
+// este método solo muestra que el carro va a toda velocidad
+public void fullThrottle()
+{
+System.out.println("el carro va a su máxima potencia");
+}
+
+// este metodo recibe la velocidad maxima como dato
+public void speed(int maxSpeed) 
+{
+    System.out.println("la velocidad maxima es: " + maxSpeed + " km/h");
+}
+
+// este metodo simula que el carro empieza a moverse hacia adelante
+public void startAndGo() 
+{
+    System.out.println(" iniciando el movimiento hacia adelante:");
+    System.out.println("1. se presiona el freno para asegurar el carro.");
+    System.out.println("2. se pisa el embrague completamente.");
+    System.out.println("3. se coloca la palanca en primera.");
+    System.out.println("4. se suelta el freno lentamente.");
+    System.out.println("5. se acelera suavemente mientras se suelta el embrague.");
+    System.out.println("el carro comienza a avanzar.");
+}
+
+// este metodo simula el movimiento en reversa
+public void goReverse() 
+{
+    System.out.println("\n iniciando el movimiento en reversa:");
+    System.out.println("1. el carro se detiene por completo.");
+    System.out.println("2. se pisa el embrague.");
+    System.out.println("3. se cambia a neutro.");
+    System.out.println("4. se pone la palanca en reversa.");
+    System.out.println("5. se mira alrededor y se empieza a retroceder despacio.");
+    System.out.println("el carro se mueve hacia atras.");
+}
+}
+
+// segunda parte
+class CarSimulator
+{
+public static void main(String[] args)
+{
+// se crea un objeto que representa el carro
+Main myCar = new Main();
+
+    // el carro arranca hacia adelante
+    myCar.startAndGo(); 
+
+    // se establece una velocidad
+    myCar.speed(50);
+
+    // ahora el carro va en reversa
+    myCar.goReverse();
+}
+}
