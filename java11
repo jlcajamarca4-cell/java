@@ -1,0 +1,51 @@
+public class Main
+{
+public static void main(String[] args)
+{
+// scanner para leer lo que escribe el usuario
+java.util.Scanner sc = new java.util.Scanner(System.in);
+
+    // crear 3 empleados con nombres de bts
+    Empleado e1 = new Empleado("taehyung", 28, "diurno");
+    Empleado e2 = new Empleado("jungkook", 26, "nocturno");
+    Empleado e3 = new Empleado("namjoon", 31, "diurno");
+
+    // guardar los empleados en un arreglo
+    Empleado[] empleados = {e1, e2, e3};
+
+    // mostrar los nombres disponibles
+    System.out.println("empleados disponibles: taehyung, jungkook, namjoon");
+    System.out.print("------------------------------------------------------");
+    System.out.print("\ndigite el nombre del empleado a consultar: ");
+    String nombreBuscado = sc.nextLine();
+
+    // esta variable sirve para saber si se encontro o no
+    boolean encontrado = false;
+
+    // recorrer todos los empleados
+    for (Empleado emp : empleados) 
+    {
+        // comparar el nombre ingresado con el de cada empleado
+        if (emp.getNombre().equalsIgnoreCase(nombreBuscado)) 
+        {
+            // mostrar los datos del empleado encontrado
+            emp.mostrarDatos();
+
+            // verificar si la edad es invalida
+            if (emp.getEdad() < 18 || emp.getEdad() > 65) 
+            {
+                System.out.println("edad no permitida para trabajar");
+            }
+
+            // verificar si el horario es invalido
+            String horario = emp.getHorario();
+            if (!horario.equalsIgnoreCase("diurno") &&
+                !horario.equalsIgnoreCase("nocturno")) 
+            {
+                System.out.println("horario invalido");
+            }
+
+            encontrado = true;
+            break;
+        }
+    }
