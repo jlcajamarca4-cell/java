@@ -1,0 +1,29 @@
+class Vehicle
+{
+// esta variable se puede usar en las clases que heredan de vehículo
+protegido String brand = "Chevrolet";
+
+// este metodo simula el sonido del vehiculo
+public void honk() 
+{                    
+    System.out.println("piii pi!");
+}
+}
+
+class Car extends Vehicle
+{
+// este es un dato propio del carro
+private String modelName = "Camaro";
+
+public static void main(String[] args) 
+{
+    // aqui se crea un objeto de tipo car
+    Car myCar = new Car();
+
+    // se llama al metodo que viene desde la clase vehicle
+    myCar.honk();
+
+    // se muestra la marca (heredada) y el modelo (propio del carro)
+    System.out.println(myCar.brand + " " + myCar.modelName);
+}
+}
