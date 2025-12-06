@@ -1,0 +1,55 @@
+class Animal
+{
+// clase principal que representa cualquier animal
+public void animalSound()
+{
+// este método dice que sonido hace el animal en general
+System.out.println("el animal emite un sonido");
+}
+}
+
+class Cat extends Animal
+{
+// esta clase hereda de animal, o sea es un tipo de animal
+public void animalSound()
+{
+// aquí se cambia el sonido por el gato
+System.out.println("el gato dice: miau");
+}
+}
+
+class Macaw extends Animal
+{
+// esta clase representa a una guacamaya
+public void animalSound()
+{
+// sonido caracteristico de la guacamaya
+System.out.println("la guacamaya dice: quiere cacao?");
+}
+}
+
+class Dog extends Animal
+{
+// otra clase que tambien hereda de animal, en este caso es un perro
+public void animalSound()
+{
+// sonido propio del perro
+System.out.println("el perro dice: guau guau");
+}
+}
+
+class Main
+{
+public static void main(String[] args)
+{
+// aquí se crean los objetos pero usando como tipo la clase animal
+// eso se hace para que todos puedan usar el mismo método
+Animal animal1 = new Cat();
+Animal animal2 = nuevo Guacamayo();
+Animal animal3 = nuevo Perro();
+
+    // aunque todos son tipo animal, cada uno responde con su sonido real
+    animal1.animalSound(); // sonido del gato
+    animal2.animalSound(); // sonido de la guacamaya
+    animal3.animalSound(); // sonido del perro
+}
